@@ -5,6 +5,7 @@ import ThemSelector from "./ThemSelector";
 function Navbar() {
   const { pathName } = useResolvedPath();
   const isHomePage = pathName === "/";
+
   return (
     <>
       <div className="bg-base-100/80 backdrop-blur-lg border-b border-base-content/10 sticky top-0 z-50 flex justify-between items-center w-full h-16 p-8">
