@@ -1,7 +1,14 @@
-import React from "react";
+import { useEffect } from "react";
+import { useProductStore } from "../store/useProductStore";
 
 function homePage() {
-  return <div></div>;
+  const { products, loading, error, fetchProducts } = useProductStore();
+  useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
+  console.log(products);
+
+  return <></>;
 }
 
 export default homePage;
